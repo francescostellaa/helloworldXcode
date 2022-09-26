@@ -6,9 +6,21 @@
 //
 
 #include <iostream>
+#include <vector>
+#include <string>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main()
+{
+    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
+
+    for (const string& word : msg)
+    {
+        cout << word << " ";
+    }
+    
+    cout << "Cambiamento al codice" << endl;
+    
+    cout << endl;
 }
